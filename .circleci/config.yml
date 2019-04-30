@@ -1,0 +1,56 @@
+version: '2.1'
+
+commands:
+  setup_npm_packages:
+    description: 'Install NPM packages and cache them'
+    steps:
+      - restore_cache:
+          keys:
+            - v1-npm-{{ arch }}-{{ checksum "yarn.lock" }}
+            - v1-npm-{{ arch }}
+      - run:
+          command: yarn --pure-lockfile
+      - save_cache:
+          key: v1-npm-{{ arch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+
+jobs:
+  deploy_staging:
+    docker:
+      - image: circleci/node:8.10
+    steps:
+      - checkout
+      - setup_npm_packages
+      - run:
+          name: deploy to staging
+          command: yarn deploy --stage staging
+
+  deploy_production:
+    docker:
+      - image: circleci/node:8.10
+    steps:
+      - checkout
+      - setup_npm_packages
+      - run:
+          name: deploy to production
+          command: yarn deploy --stage production
+
+workflows:
+  version: 2
+
+  deploy_staging:
+    jobs:
+      - deploy_staging:
+          filters:
+            branches:
+              ignore:
+                - master
+
+  deploy_production:
+    jobs:
+      - deploy_production:
+          filters:
+            branches:
+              only:
+                - master
