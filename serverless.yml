@@ -18,3 +18,10 @@ functions:
       - http:
           method: get
           path: rss/blog
+  rss-news:
+    handler: src/handler.rssNews
+    role: ${env:AWS_LAMBDA_IAM_ROLE}
+    events:
+      - http:
+          method: get
+          path: rss/news
