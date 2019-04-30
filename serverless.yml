@@ -13,6 +13,7 @@ provider:
 functions:
   rss-blog:
     handler: src/handler.rssBlog
+    role: ${env:AWS_LAMBDA_IAM_ROLE}
     events:
       - http:
           method: get
