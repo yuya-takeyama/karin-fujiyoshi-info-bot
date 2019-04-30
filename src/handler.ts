@@ -4,6 +4,7 @@ import fetch from 'node-fetch';
 import { JSDOM } from 'jsdom';
 import * as striptags from 'striptags';
 import { Feed } from 'feed';
+import { parseFromTimeZone } from 'date-fns-timezone';
 
 const baseUrl = 'http://www.keyakizaka46.com';
 const path = (path: string) => baseUrl + path;
@@ -36,7 +37,9 @@ const fetchBlogArticles = async () => {
     const titleElem = elem.querySelector('.box-ttl h3 a');
     const dateElem = elem.querySelector('.box-bottom ul li');
     if (titleElem && dateElem) {
-      const date = new Date(striptags(dateElem.innerHTML).trim());
+      const date = parseFromTimeZone(striptags(dateElem.innerHTML).trim(), {
+        timeZone: 'Asia/Tokyo',
+      });
       const url = titleElem.getAttribute('href');
       if (typeof url === 'string') {
         articles.push({
