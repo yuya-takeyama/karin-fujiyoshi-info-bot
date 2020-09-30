@@ -29,9 +29,7 @@ const fetchBlogArticles = async () => {
   const res = await fetch(path('/s/k46o/diary/member/list?ima=0000&ct=47'));
   const html = await res.text();
   const dom = new JSDOM(html);
-  const elems = Array.from(
-    dom.window.document.querySelectorAll('.box-content .box-main article'),
-  );
+  const elems = dom.window.document.querySelectorAll('.box-content .box-main article');
   const articles: BlogArticle[] = [];
   for (const elem of elems) {
     const titleElem = elem.querySelector('.box-ttl h3 a');
@@ -114,9 +112,7 @@ const fetchNewsItems = async () => {
   );
   const html = await page.text();
   const dom = new JSDOM(html);
-  const elems = Array.from(
-    dom.window.document.querySelectorAll('.box-news ul li'),
-  );
+  const elems = dom.window.document.querySelectorAll('.box-news ul li');
 
   const newsItems: NewsItem[] = [];
   for (const elem of elems) {
