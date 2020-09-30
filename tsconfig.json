@@ -10,9 +10,11 @@
     "target": "es2017",
     "rootDir": "src",
     "outDir": "lib",
-    "strict": true
+    "strict": true,
+    "esModuleInterop": true
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "src/**/*.test.ts"
   ]
 }

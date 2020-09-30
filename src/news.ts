@@ -1,5 +1,5 @@
 import { JSDOM } from 'jsdom';
-import * as striptags from 'striptags';
+import striptags from 'striptags';
 import { Feed } from 'feed';
 import { parseFromTimeZone } from 'date-fns-timezone';
 import { path } from './util';
