@@ -7,7 +7,8 @@
   "scripts": {
     "build": "sls package",
     "deploy": "sls deploy",
-    "invoke": "sls invoke"
+    "invoke": "sls invoke",
+    "test": "jest"
   },
   "dependencies": {
     "bufferutil": "^4.0.1",
