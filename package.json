@@ -10,6 +10,7 @@
     "invoke": "sls invoke"
   },
   "dependencies": {
+    "canvas": "file:./src/functions/canvas",
     "date-fns-timezone": "^0.1.4",
     "feed": "^2.0.4",
     "jsdom": "^16.4.0",
