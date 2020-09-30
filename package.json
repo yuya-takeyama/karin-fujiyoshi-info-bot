@@ -12,14 +12,14 @@
   "dependencies": {
     "date-fns-timezone": "^0.1.4",
     "feed": "^2.0.4",
-    "jsdom": "^12.2.0",
+    "jsdom": "^16.4.0",
     "node-fetch": "^2.4.1",
     "source-map-support": "^0.5.10",
     "striptags": "^3.1.1"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.17",
-    "@types/jsdom": "^12.2.3",
+    "@types/jsdom": "^16.2.4",
     "@types/node": "^10.12.18",
     "@types/node-fetch": "^2.3.3",
     "serverless": "^1.41.1",
