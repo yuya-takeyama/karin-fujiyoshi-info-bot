@@ -51,3 +51,4 @@ jobs:
 
       - run: yarn serverless invoke local -f rss-blog
       - run: yarn serverless invoke local -f rss-news
+      - run: yarn test
