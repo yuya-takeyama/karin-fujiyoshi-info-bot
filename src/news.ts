@@ -11,6 +11,10 @@ type NewsItem = {
   date: Date;
 };
 
+type AtomOptions = {
+  updated: Date;
+};
+
 export const fetchNewsPage = async (): Promise<string> => {
   const page = await fetch(
     path('/s/k46o/news/list?ima=0000&list%5B%5D=47&reverse=ON'),
@@ -18,13 +22,16 @@ export const fetchNewsPage = async (): Promise<string> => {
   return page.text();
 };
 
-export const newsHtmlToAtom = (html: string): string => {
+export const newsHtmlToAtom = (html: string, options: AtomOptions): string => {
   const newsItems = htmlToNewsItems(html);
 
-  return newsItemsToAtom(newsItems);
+  return newsItemsToAtom(newsItems, options);
 };
 
-const newsItemsToAtom = (newsItems: NewsItem[]): string => {
+const newsItemsToAtom = (
+  newsItems: NewsItem[],
+  options: AtomOptions,
+): string => {
   const feed = new Feed({
     title: '欅坂46公式サイト 藤吉夏鈴ニュース',
     description: '「坂道シリーズ」第2弾　欅坂46',
@@ -33,6 +40,7 @@ const newsItemsToAtom = (newsItems: NewsItem[]): string => {
     link: path('/'),
     feedLinks: {},
     copyright: 'Seed & Flower LLC',
+    updated: options.updated,
   });
   for (const newsItem of newsItems) {
     feed.addItem({

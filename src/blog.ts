@@ -11,17 +11,26 @@ type BlogArticle = {
   date: Date;
 };
 
+type AtomOptions = {
+  updated: Date;
+};
+
 export const fetchBlogPage = async (): Promise<string> => {
   const res = await fetch(path('/s/k46o/diary/member/list?ima=0000&ct=47'));
+
   return res.text();
 };
 
-export const blogHtmlToAtom = (html: string): string => {
+export const blogHtmlToAtom = (html: string, options: AtomOptions): string => {
   const articles = blogHtmlToArticles(html);
-  return articlesToAtom(articles);
+
+  return articlesToAtom(articles, options);
 };
 
-const articlesToAtom = (articles: BlogArticle[]): string => {
+const articlesToAtom = (
+  articles: BlogArticle[],
+  options: AtomOptions,
+): string => {
   const feed = new Feed({
     title: '欅坂46 藤吉 夏鈴 公式ブログ',
     description: '「坂道シリーズ」第2弾　欅坂46',
@@ -30,6 +39,7 @@ const articlesToAtom = (articles: BlogArticle[]): string => {
     link: path('/'),
     feedLinks: {},
     copyright: 'Seed & Flower LLC',
+    updated: options.updated,
   });
 
   for (const article of articles) {

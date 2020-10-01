@@ -7,7 +7,7 @@ import { ensureError, errorToResponse, atomSuccessResponse } from './util';
 export const rssBlog: APIGatewayProxyHandler = async (_event, _context) => {
   try {
     const html = await fetchBlogPage();
-    const feed = blogHtmlToAtom(html);
+    const feed = blogHtmlToAtom(html, { updated: new Date() });
 
     return atomSuccessResponse(feed);
   } catch (err) {
@@ -21,7 +21,7 @@ export const rssBlog: APIGatewayProxyHandler = async (_event, _context) => {
 export const rssNews: APIGatewayProxyHandler = async (_event, _context) => {
   try {
     const html = await fetchNewsPage();
-    const feed = newsHtmlToAtom(html);
+    const feed = newsHtmlToAtom(html, { updated: new Date() });
 
     return atomSuccessResponse(feed);
   } catch (err) {

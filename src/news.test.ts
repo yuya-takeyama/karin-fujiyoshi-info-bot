@@ -12,6 +12,8 @@ describe('#newsHtmlToAtom', () => {
     const html = (
       await readFile(join(newsFixturesDir, 'news.html'))
     ).toString();
-    expect(newsHtmlToAtom(html)).toMatchSnapshot();
+    expect(
+      newsHtmlToAtom(html, { updated: new Date(2020, 1, 1, 9, 0, 0) }),
+    ).toMatchSnapshot();
   });
 });
