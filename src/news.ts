@@ -18,13 +18,13 @@ export const fetchNewsPage = async (): Promise<string> => {
   return page.text();
 };
 
-export const newsHtmlToFeed = (html: string) => {
+export const newsHtmlToAtom = (html: string): string => {
   const newsItems = htmlToNewsItems(html);
 
-  return newsItemsToFeed(newsItems);
+  return newsItemsToAtom(newsItems);
 };
 
-const newsItemsToFeed = (newsItems: NewsItem[]): Feed => {
+const newsItemsToAtom = (newsItems: NewsItem[]): string => {
   const feed = new Feed({
     title: '欅坂46公式サイト 藤吉夏鈴ニュース',
     description: '「坂道シリーズ」第2弾　欅坂46',
@@ -41,7 +41,7 @@ const newsItemsToFeed = (newsItems: NewsItem[]): Feed => {
       date: newsItem.date,
     });
   }
-  return feed;
+  return feed.atom1();
 };
 
 const htmlToNewsItems = (html: string): NewsItem[] => {

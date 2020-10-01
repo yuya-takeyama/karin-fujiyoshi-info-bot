@@ -16,12 +16,12 @@ export const fetchBlogPage = async (): Promise<string> => {
   return res.text();
 };
 
-export const blogHtmlToFeed = (html: string): Feed => {
+export const blogHtmlToAtom = (html: string): string => {
   const articles = blogHtmlToArticles(html);
-  return articlesToFeed(articles);
+  return articlesToAtom(articles);
 };
 
-const articlesToFeed = (articles: BlogArticle[]): Feed => {
+const articlesToAtom = (articles: BlogArticle[]): string => {
   const feed = new Feed({
     title: '欅坂46 藤吉 夏鈴 公式ブログ',
     description: '「坂道シリーズ」第2弾　欅坂46',
@@ -40,7 +40,7 @@ const articlesToFeed = (articles: BlogArticle[]): Feed => {
     });
   }
 
-  return feed;
+  return feed.atom1();
 };
 
 const blogHtmlToArticles = (html: string) => {

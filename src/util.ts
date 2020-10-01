@@ -1,5 +1,4 @@
 import { APIGatewayProxyResult } from 'aws-lambda';
-import { Feed } from 'feed';
 
 const baseUrl = 'http://www.keyakizaka46.com';
 export const path = (path: string) => baseUrl + path;
@@ -14,13 +13,13 @@ export const ensureError = (err: any): Error => {
   }
 };
 
-export const feedToResponse = (feed: Feed): APIGatewayProxyResult => {
+export const atomSuccessResponse = (atom: string): APIGatewayProxyResult => {
   return {
     statusCode: 200,
     headers: {
       'Content-Type': 'application/atom+xml',
     },
-    body: feed.atom1(),
+    body: atom,
   };
 };
 

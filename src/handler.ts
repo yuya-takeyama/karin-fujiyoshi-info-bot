@@ -1,15 +1,15 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import 'source-map-support/register';
-import { blogHtmlToFeed, fetchBlogPage } from './blog';
-import { fetchNewsPage, newsHtmlToFeed } from './news';
-import { ensureError, errorToResponse, feedToResponse } from './util';
+import { blogHtmlToAtom, fetchBlogPage } from './blog';
+import { fetchNewsPage, newsHtmlToAtom } from './news';
+import { ensureError, errorToResponse, atomSuccessResponse } from './util';
 
 export const rssBlog: APIGatewayProxyHandler = async (_event, _context) => {
   try {
     const html = await fetchBlogPage();
-    const feed = blogHtmlToFeed(html);
+    const feed = blogHtmlToAtom(html);
 
-    return feedToResponse(feed);
+    return atomSuccessResponse(feed);
   } catch (err) {
     const error = ensureError(err);
     console.error(error);
@@ -21,9 +21,9 @@ export const rssBlog: APIGatewayProxyHandler = async (_event, _context) => {
 export const rssNews: APIGatewayProxyHandler = async (_event, _context) => {
   try {
     const html = await fetchNewsPage();
-    const feed = newsHtmlToFeed(html);
+    const feed = newsHtmlToAtom(html);
 
-    return feedToResponse(feed);
+    return atomSuccessResponse(feed);
   } catch (err) {
     const error = ensureError(err);
     console.error(error);
