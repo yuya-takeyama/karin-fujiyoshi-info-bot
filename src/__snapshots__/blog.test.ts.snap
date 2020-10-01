@@ -1,127 +1,155 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`#blogHtmlToFeed returns a Feed 1`] = `
-Feed {
-  "addCategory": [Function],
-  "addContributor": [Function],
-  "addExtension": [Function],
-  "addItem": [Function],
-  "atom1": [Function],
-  "categories": Array [],
-  "contributors": Array [],
-  "extensions": Array [],
-  "items": Array [
-    Object {
-      "date": 2020-09-05T10:23:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/35467?ima=0000&cd=member",
-      "title": "9",
-    },
-    Object {
-      "date": 2020-08-29T08:32:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/35348?ima=0000&cd=member",
-      "title": "19",
-    },
-    Object {
-      "date": 2020-08-16T14:58:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/35181?ima=0000&cd=member",
-      "title": "夏だ",
-    },
-    Object {
-      "date": 2020-08-08T07:02:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/35075?ima=0000&cd=member",
-      "title": "お久しぶりです",
-    },
-    Object {
-      "date": 2020-07-19T13:19:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/34842?ima=0000&cd=member",
-      "title": "愛おしい存在",
-    },
-    Object {
-      "date": 2020-07-15T21:37:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/34788?ima=0000&cd=member",
-      "title": "お久しぶりです",
-    },
-    Object {
-      "date": 2020-06-12T07:58:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/34288?ima=0000&cd=member",
-      "title": "さてさて",
-    },
-    Object {
-      "date": 2020-05-29T08:21:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/34050?ima=0000&cd=member",
-      "title": "うーん",
-    },
-    Object {
-      "date": 2020-05-23T05:36:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/33949?ima=0000&cd=member",
-      "title": "眠",
-    },
-    Object {
-      "date": 2020-05-16T10:36:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/33827?ima=0000&cd=member",
-      "title": "お",
-    },
-    Object {
-      "date": 2020-05-10T14:37:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/33739?ima=0000&cd=member",
-      "title": "猫",
-    },
-    Object {
-      "date": 2020-05-03T11:53:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/33630?ima=0000&cd=member",
-      "title": "とにかく春が苦手ナンデス",
-    },
-    Object {
-      "date": 2020-04-15T14:13:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/33357?ima=0000&cd=member",
-      "title": "これは",
-    },
-    Object {
-      "date": 2020-04-11T11:43:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/33299?ima=0000&cd=member",
-      "title": "おー",
-    },
-    Object {
-      "date": 2020-04-06T12:54:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/33216?ima=0000&cd=member",
-      "title": "4周年だーー",
-    },
-    Object {
-      "date": 2020-04-05T11:47:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/33144?ima=0000&cd=member",
-      "title": "いつまでもセーラー服が着たいんだ!!!!!",
-    },
-    Object {
-      "date": 2020-04-04T08:15:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/33126?ima=0000&cd=member",
-      "title": "4月",
-    },
-    Object {
-      "date": 2020-03-22T14:29:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/32995?ima=0000&cd=member",
-      "title": "もう夏の話",
-    },
-    Object {
-      "date": 2020-03-08T15:22:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/32860?ima=0000&cd=member",
-      "title": "なんでだろう",
-    },
-    Object {
-      "date": 2020-03-01T12:00:00.000Z,
-      "link": "http://www.keyakizaka46.com/s/k46o/diary/detail/32795?ima=0000&cd=member",
-      "title": "TGCありがとうございました",
-    },
-  ],
-  "json1": [Function],
-  "options": Object {
-    "copyright": "Seed & Flower LLC",
-    "description": "「坂道シリーズ」第2弾　欅坂46",
-    "feed": "http://www.keyakizaka46.com/",
-    "feedLinks": Object {},
-    "id": "http://www.keyakizaka46.com/",
-    "link": "http://www.keyakizaka46.com/",
-    "title": "欅坂46 藤吉 夏鈴 公式ブログ",
-  },
-  "rss2": [Function],
-}
+exports[`#blogHtmlToAtom returns an atom Feed 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"utf-8\\"?>
+<feed xmlns=\\"http://www.w3.org/2005/Atom\\">
+    <id>http://www.keyakizaka46.com/</id>
+    <title>欅坂46 藤吉 夏鈴 公式ブログ</title>
+    <updated>2020-02-01T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel=\\"alternate\\" href=\\"http://www.keyakizaka46.com/\\"/>
+    <link rel=\\"self\\" href=\\"http://www.keyakizaka46.com/\\"/>
+    <subtitle>「坂道シリーズ」第2弾　欅坂46</subtitle>
+    <rights>Seed &amp; Flower LLC</rights>
+    <entry>
+        <title type=\\"html\\"><![CDATA[9]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/35467?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/35467?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-09-05T10:23:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[19]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/35348?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/35348?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-08-29T08:32:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[夏だ]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/35181?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/35181?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-08-16T14:58:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[お久しぶりです]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/35075?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/35075?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-08-08T07:02:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[愛おしい存在]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/34842?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/34842?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-07-19T13:19:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[お久しぶりです]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/34788?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/34788?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-07-15T21:37:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[さてさて]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/34288?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/34288?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-06-12T07:58:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[うーん]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/34050?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/34050?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-05-29T08:21:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[眠]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/33949?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/33949?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-05-23T05:36:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[お]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/33827?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/33827?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-05-16T10:36:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[猫]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/33739?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/33739?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-05-10T14:37:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[とにかく春が苦手ナンデス]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/33630?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/33630?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-05-03T11:53:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[これは]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/33357?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/33357?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-04-15T14:13:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[おー]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/33299?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/33299?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-04-11T11:43:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[4周年だーー]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/33216?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/33216?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-04-06T12:54:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[いつまでもセーラー服が着たいんだ!!!!!]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/33144?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/33144?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-04-05T11:47:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[4月]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/33126?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/33126?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-04-04T08:15:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[もう夏の話]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/32995?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/32995?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-03-22T14:29:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[なんでだろう]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/32860?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/32860?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-03-08T15:22:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[TGCありがとうございました]]></title>
+        <id>http://www.keyakizaka46.com/s/k46o/diary/detail/32795?ima=0000&amp;cd=member</id>
+        <link href=\\"http://www.keyakizaka46.com/s/k46o/diary/detail/32795?ima=0000&amp;cd=member\\">
+        </link>
+        <updated>2020-03-01T12:00:00.000Z</updated>
+    </entry>
+</feed>"
 `;

@@ -8,7 +8,7 @@
     "build": "sls package",
     "deploy": "sls deploy",
     "invoke": "sls invoke",
-    "test": "jest"
+    "test": "TZ=Asia/Tokyo jest"
   },
   "dependencies": {
     "bufferutil": "^4.0.1",
